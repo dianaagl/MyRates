@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+                tools:context="com.dianaagl.myrates.CalculatorAcitivity">
+    <LinearLayout
+            android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/firstL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+        android:id="@+id/input_num"
+        android:inputType="numberDecimal"/>
+
+<TextView
+        android:textSize="@dimen/size"
+    android:id="@+id/name_of_val"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+     android:layout_below="@+id/firstL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+                android:layout_gravity="center"
+                android:id="@+id/calc"
+            android:textSize="@dimen/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textAlignment="center"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/summ"
+    android:text="6000"
+    android:textAlignment="center"
+    android:layout_gravity="center"
+android:layout_margin="@dimen/activity_vertical_margin"
+    android:textSize="@dimen/size"/>
+    </LinearLayout>
+</RelativeLayout>
